@@ -1,4 +1,269 @@
+/* primary-color-text #2196F3 (синій)
+   main-color-text #212121 (чорний)
+   secondary-color-text #757575 (сірий)
+   logo-color-text #000000 (глибокий чорний)
+   footer-color-text #FFFFFF (білий)
+   
+   main-color-bg #F5F5F5; (білий)
+   secondary-color-bg #F5F4FA; (ліловий)
+   footer-color-bg #2F303A; (темно сірий)*/
+
 body {
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
     background-color: #F5F5F5;
+}
+
+:root {
+    --primary-color-text: #2196F3;
+    --main-color-text: #212121;
+    --secondary-color-text: #757575;
+    --logo-color-text: #000000;
+    --footer-color-text: #FFFFFF;
+    --main-color-bg: #F5F5F5;
+    --secondary-color-bg: #F5F4FA;
+    --footer-color-bg: #2F303A;
+}
+
+/* !!!стилі Шапки!!! */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--logo-color-text);
+}
+.logo-color {
+    color: var(--primary-color-text);
+}
+
+.menu {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.menu-studia .link {
+    color: var(--main-color-text);
+}
+.menu-portfolio .link {
+    color: var(--main-color-text)
+}
+.menu-kontakty .link {
+    color: var(--main-color-text)
+}
+.menu-studia .link:hover {
+    color: var(--primary-color-text);
+}
+.menu-portfolio .link:hover {
+    color: var(--primary-color-text);
+}
+.menu-kontakty .link:hover {
+    color: var(--primary-color-text);
+}
+.menu-studia .link:focus {
+    color: var(--primary-color-text);
+}
+.menu-portfolio .link:focus {
+    color: var(--primary-color-text);
+}
+.menu-kontakty .link:focus {
+    color: var(--primary-color-text);
+}
+
+.kontakty {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.mail .link {
+    color: var(--secondary-color-text);
+}
+.tel .link {
+    color: var(--secondary-color-text);
+}
+.mail .link:hover {
+    color: var(--primary-color-text);
+}
+.tel .link:hover {
+    color: var(--primary-color-text);
+}
+.mail .link:focus {
+    color: var(--primary-color-text);
+}
+.tel .link:focus {
+    color: var(--primary-color-text);
+}
+
+/* !!!стилі Футера!!! */
+.footer {
+    background-color: var(--footer-color-bg);
+}
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--footer-color-text);
+}
+/* .logo-color задано в стилі Шапки */
+.f-kontakty {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.f-adress .link {
+    color: var(--footer-color-text);
+}
+.f-mail .link {
+    color: rgba(255, 255, 255, 0.6);   
+}
+.f-tel .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* !!!стилі головної Студія!!! */
+.hero {
+    background-color: var(--footer-color-bg);
+}
+.hero-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--footer-color-text);
+}
+.hero-button {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+
+.title-section {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+.title-perevagy {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-text);
+}
+.paragraph-perevagy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+.title-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+.title-subname {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+
+/* !!!стилі головної Портфоліо!!! */
+
+/* класи 
+.hero-title, 
+.title-name, 
+.title-subname 
+взяті із стилів головної Студія */
+
+/* стилі Фільтра */
+.all .button {
+    background-color: var(--secondary-color-bg);
+    color: var(--main-color-text);
+}
+.all .button:hover {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+.all .button:focus {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+
+.web .button {
+    background-color: var(--secondary-color-bg);
+    color: var(--main-color-text);
+}
+.web .button:hover {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+.web .button:focus {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+
+.app .button {
+    background-color: var(--secondary-color-bg);
+    color: var(--main-color-text);
+}
+.app .button:hover {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+.app .button:focus {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+
+.design .button {
+    background-color: var(--secondary-color-bg);
+    color: var(--main-color-text);
+}
+.design .button:hover {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+.design .button:focus {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+
+.marketing .button {
+    background-color: var(--secondary-color-bg);
+    color: var(--main-color-text);
+}
+.marketing .button:hover {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
+}
+.marketing .button:focus {
+    background-color: var(--primary-color-text);
+    color: var(--footer-color-text);
 }
