@@ -26,7 +26,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    background-color: var(--main-color-bg)
+    background-color: var(--main-color-bg);
+    color: var(--secondary-color-text);
+}
+
+.hero-button,
+.all-button .fr-button {
+    cursor: pointer;
 }
 
 /* !!!стилі Шапки!!! */
