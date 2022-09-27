@@ -20,12 +20,12 @@
     --secondary-color-bg: #F5F4FA;
     --footer-color-bg: #2F303A;
     --active-button: #188CE8;
+    --card-border-color: #EEEEEE;
     --kontakty-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     background-color: var(--main-color-bg);
     color: var(--secondary-color-text);
 }
@@ -42,7 +42,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* line-height: 31px;    */
     letter-spacing: 0.03em;
     color: var(--logo-color-text);
 }
@@ -50,12 +49,15 @@ body {
     color: var(--primary-color-text);
 }
 
-.menu,
-.kontakty {
+.menu-studia .link,
+.menu-portfolio .link,
+.menu-kontakty .link,
+.mail .link,
+.tel .link {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    /* line-height: 16px; */
     letter-spacing: 0.02em;
 }
 .menu-studia .link,
@@ -100,16 +102,16 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* line-height: 31px; */
     letter-spacing: 0.03em;
     color: var(--footer-color-text);
 }
 /* .logo-color задано в стилі Шапки */
-.f-kontakty {
-    font-weight: 400;
+.f-adress .link,
+.f-mail .link,
+.f-tel .link {
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    /* line-height: 24px; */
     letter-spacing: 0.03em;
 }
 .f-adress .link {
@@ -133,16 +135,24 @@ body {
     background-color: var(--footer-color-bg);
 }
 .hero-title {
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* line-height: 60px; */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--footer-color-text);
 }
 .hero-button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     background-color: var(--primary-color-text);
     color: var(--footer-color-text);
 }
@@ -151,49 +161,54 @@ body {
     background-color: var(--active-button);
 }
 
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
 .title-section {
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    /* line-height: 42px; */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
 }
 .title-perevagy {
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    /* line-height: 16px; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color-text);
 }
 .paragraph-perevagy {
-    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    /* line-height: 24px; */
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
 }
 .title-name {
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* line-height: 19px; */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
 }
 .title-subname {
-    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.19;
-    /* line-height: 19px; */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
+}
+.card-solid {
+    background-color: var(--main-color-bg);
 }
 
 .bg-violet {
@@ -221,6 +236,12 @@ a {
 .app .fr-button,
 .design .fr-button,
 .marketing .fr-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
     background-color: var(--secondary-color-bg);
     color: var(--main-color-text);
 }
@@ -236,4 +257,9 @@ a {
 .marketing .fr-button:focus {
     background-color: var(--primary-color-text);
     color: var(--footer-color-text);
+}
+
+.card-border {
+    box-sizing: border-box;
+    border: 1px solid var(--card-border-color);
 }
