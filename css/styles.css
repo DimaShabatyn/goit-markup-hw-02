@@ -32,6 +32,7 @@ body {
 
 .hero-button,
 .all-button .fr-button {
+    font-family: inherit;
     cursor: pointer;
 }
 
@@ -130,7 +131,7 @@ body {
     color: var(--primary-color-text);
 }
 
-/* !!!стилі головної Студія!!! */
+/* ----------!!!стилі головної Студія!!!---------- */
 .hero {
     background-color: var(--footer-color-bg);
 }
@@ -149,8 +150,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--primary-color-text);
@@ -228,13 +227,7 @@ a {
     text-decoration: none;
 }
 
-/* !!!стилі головної Портфоліо!!! */
-
-/* класи 
-.hero-title, 
-.title-name, 
-.title-subname 
-взяті із стилів головної Студія */
+/* ----------!!!стилі головної Портфоліо!!!---------- */
 
 /* стилі Фільтра */
 .all .fr-button,
@@ -265,7 +258,19 @@ a {
     color: var(--footer-color-text);
 }
 
-.card-border {
-    box-sizing: border-box;
-    border: 1px solid var(--card-border-color);
+
+.title-portfolio {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color-text)
+}
+.subname-portfolio {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
 }
